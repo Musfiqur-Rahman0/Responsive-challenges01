@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 .header > div {
     width: 50%;
@@ -37,4 +37,96 @@
     outline: none;
     border: none;
     border-radius: 8px;
+}
+.container {
+    max-width: 1128px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.targets , .appInfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+.target{
+    padding: 10px;
+    border-radius: 1rem;
+}
+.bg-gray {
+    background-color: rgba(79, 157, 166, 0.1);
+}
+.bg-pinkish {
+    background-color: rgba(255, 89, 89, 0.1);
+}
+.bg-yellowish{
+    background-color: rgb(255, 244, 214);
+}
+.text-center {
+    text-align: center;
+}
+.title{
+    font-size: 48px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.flexReverse {
+    flex-direction: row-reverse;
+}
+.newApp{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.newApp div {
+    width: 100%;
+}
+.contentCtn {
+    width: calc(100% - (35% + 40px));
+   
+}
+.appImg{
+    /* border: 1px solid var(--primary); */
+    text-align: center;
+    padding: 10px;
+}
+
+
+.secondary{
+    color: rgb(255, 173, 90);
+}
+.primary{
+    color:var(--primary);
+}
+
+footer{
+    width: 100%;    
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    background-color: black;
+    padding: 25px ;
+  
+}
+footer > div > h2 {
+    color:  white;
+    font-family: "Lobster";
+    font-size: 2.5rem;
+}
+footer > div > p {
+    color: white;
+    opacity: 0.7;
 }
