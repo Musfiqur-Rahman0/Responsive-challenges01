@@ -37,6 +37,7 @@
     outline: none;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 .container {
     max-width: 1128px;
@@ -46,6 +47,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .targets , .appInfo{
     display: flex;
@@ -72,6 +74,9 @@
 .title{
     font-size: 48px;
 }
+.subtitle {
+    font-size: 2.25rem;
+}
 
 .content {
     width: 100%;
@@ -89,12 +94,11 @@
     justify-content: center;
     gap: 30px;
 }
-.newApp div {
+.appTitle , .appInfo, .appImg {
     width: 100%;
 }
 .contentCtn {
     width: calc(100% - (35% + 40px));
-   
 }
 .appImg{
     /* border: 1px solid var(--primary); */
@@ -129,4 +133,55 @@ footer > div > h2 {
 footer > div > p {
     color: white;
     opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .targets, .newApp , .appInfo{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contentCtn  {
+        width: 100%;
+        padding: 10px;
+    }
+    .imgContainer  {
+        width: 80%;
+        height: 300px;
+    }
+    .imgContainer > img {
+        height: 100%;
+    }
+    .circle, .circleCode {
+        display: none;
+    }
+   
+    .box-3 {
+        right: 60px;
+    }
+   
+
+   
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .container {
+        padding: 10px;
+    }
+    .appInfo{
+        flex-direction: column;
+      
+    }
+    .circle, .circleCode {
+        display: none;
+    }
+
 }
